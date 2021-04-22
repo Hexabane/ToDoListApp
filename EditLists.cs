@@ -59,18 +59,18 @@ namespace ToDoListApp
             int selectedIndex = lbViewList.SelectedIndex;
 
 
-            ListHandler.userList()[selectedIndex].EventName = tbEventName.Text;
-            ListHandler.userList()[selectedIndex].EventType = tbEventType.Text;
-            ListHandler.userList()[selectedIndex].DateTime = dtpWhen.Text;
+            List<ListData> test = ListHandler.userList();
 
-           
+            test[selectedIndex].EventName = tbEventName.Text;
+            test[selectedIndex].EventType = tbEventType.Text;
+            test[selectedIndex].DateTime = dtpWhen.Text;
 
             string filepath = "D:\\C# Projects\\ToDoListApp\\ToDoList.txt";
             StreamWriter write = new StreamWriter(filepath);
 
-            foreach  (ListData item in ListHandler.userList())
+            foreach  (ListData item in test)
             {
-                write.WriteLine(item.EventName + "," + item.EventType + "," + item.DateTime);
+                write.Write(item.EventName + "," + item.EventType + "," + item.DateTime + "\n");
                 
 
             }
