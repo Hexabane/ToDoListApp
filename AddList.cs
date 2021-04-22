@@ -31,6 +31,8 @@ namespace ToDoListApp
 
             data.populatingTextFile();
 
+            this.Close();
+
         }
     }
 }

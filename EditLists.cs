@@ -76,6 +76,7 @@ namespace ToDoListApp
             }
 
             write.Close();
+            this.Close();
            
 
 
