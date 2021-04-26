@@ -11,7 +11,7 @@ namespace ToDoListApp
     {
         public static List<ListData> userList()
         {
-            StreamReader file = new StreamReader("D:\\C# Projects\\ToDoListApp\\ToDoList.txt");
+            StreamReader file = new StreamReader("ToDoList.txt");
 
             List<ListData> output = new List<ListData>();
 

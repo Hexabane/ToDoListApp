@@ -65,7 +65,7 @@ namespace ToDoListApp
             test[selectedIndex].EventType = tbEventType.Text;
             test[selectedIndex].DateTime = dtpWhen.Text;
 
-            string filepath = "D:\\C# Projects\\ToDoListApp\\ToDoList.txt";
+            string filepath = "ToDoList.txt";
             StreamWriter write = new StreamWriter(filepath);
 
             foreach  (ListData item in test)

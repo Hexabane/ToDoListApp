@@ -25,6 +25,7 @@ namespace ToDoListApp
         public void populateListBox()
         {
             List<ListData> viewListInfo = ListHandler.userList();
+            viewListInfo = viewListInfo.OrderBy(x => x.DateTime).ToList();
 
             foreach(ListData item in viewListInfo)
             {

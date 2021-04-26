@@ -30,7 +30,7 @@ namespace ToDoListApp
 
         public void populatingTextFile()
         {
-            string filepath = "D:\\C# Projects\\ToDoListApp\\ToDoList.txt";
+            string filepath = "ToDoList.txt";
 
             string dataInput = EventName + "," +  EventType  + "," + DateTime;
 
